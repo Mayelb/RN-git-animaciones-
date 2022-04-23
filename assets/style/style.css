@@ -52,6 +52,7 @@ main{
  padding-top: 100px;
 }
 h2{
+    padding-top: 70px;
     padding: 30px;
     text-align: center;
     font-weight: 700;
@@ -126,7 +127,6 @@ footer{
     width: 80px;
     padding: 30px;
 }
-
 
 
  
