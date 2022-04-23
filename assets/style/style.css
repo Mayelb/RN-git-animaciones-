@@ -9,7 +9,7 @@
 }
 .encabezado{
      background-color: rgb(209, 250, 250);
-     height: 150px;
+     height: 200px;
      position: fixed;
      width: 100%;
      top: 0;
@@ -49,7 +49,7 @@ a{
     line-height: 80px; 
 }
 main{
- padding-top: 100px;
+ padding-top: 250px;
 }
 h2{
     padding: 30px;
