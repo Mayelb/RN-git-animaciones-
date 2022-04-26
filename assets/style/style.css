@@ -27,11 +27,11 @@ a{
      color: rgb(36, 36, 93);
 }
 .nav-menu{
-     display: flex;
-     position: relative;
-     margin: 40px;
-     list-style: none;
- }
+        display: flex;
+        position: relative;
+        margin: 40px;
+        list-style: none;
+    }
 .nav-menu li{
      color: rgb(36, 36, 93);
      text-decoration: none;
@@ -39,12 +39,8 @@ a{
      padding: 10px;
  }
  .nav-submenu{
-     position: absolute;
      display: none;
  }
-.nav-menu a:hover{
-    background-color: rgb(220, 249, 249);
-}
 .nav-menu a{
     border-radius: 10px;
     padding: 8px 12px;
@@ -54,10 +50,9 @@ a{
     line-height: 80px; 
 }
 main{
- padding-top: 250px;
+ padding-top: 40px;
 }
 h2{
-    padding-top: 70px;
     padding: 30px;
     text-align: center;
     font-weight: 700;
@@ -66,22 +61,9 @@ h2{
     color: rgb(36, 36, 93);    
 }
 .item-card{
-    width: 200px;
-    height: 200px;
-    display: inline-block;
-    justify-content: center;
-    padding-top: 60px;
-    padding:20px 20px;
-    margin: 60px;
-}
-.item-card_img{
-    width: 150px;
-    height: 150px;
-    justify-content: center;
-    border-radius: 20px;
-}
+   width: 400px;
+} 
 .item-card_1{
-    text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
     color: rgb(36, 36, 93);
