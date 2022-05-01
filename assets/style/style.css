@@ -9,45 +9,39 @@
 }
 .encabezado{
      background-color:rgb(253, 177, 177);
-     height: 200px;
+     height: 210px;
      width: 100%;
      top: 0;
      left: 0;
 }
  #logo{
-     width: 130px;
+     width: 200px;
      padding: 20px;
 }
 .nav{
      display: flex;
      justify-content: space-between;
 }
-a{
-     text-decoration: none;
-     color: rgb(36, 36, 93);
-}
 .nav-menu{
         display: flex;
-        position: relative;
-        margin: 40px;
         list-style: none;
+
     }
 .nav-menu li{
-     color: rgb(36, 36, 93);
-     text-decoration: none;
      font-size: 30px;
-     padding: 10px;
- }
- .nav-submenu{
-     display: none;
+     padding: 8px 10px;
  }
 .nav-menu a{
+    color: rgb(36, 36, 93); 
+    text-decoration: none;
     border-radius: 10px;
     padding: 8px 12px;
 }
+.nav-menu ul{
+    background-color:rgb(253, 177, 177);
+}
 #lista{
-    padding: 20px 40px;
-    line-height: 80px; 
+    padding:50px;
 }
 main{
  padding-top: 40px;
@@ -81,6 +75,11 @@ h2{
     color: rgb(36, 36, 93);
     background-color: rgb(253, 177, 177);
 }
+.form{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    color:rgb(36, 36, 93);
+}
 .contacto{
     padding: 30px;
     justify-content:center;
@@ -92,27 +91,8 @@ h2{
 li{
     list-style: none;
 }
-.contacto img{
-    list-style: none;
-    width: 80px;
-    padding: 30px;
-}
 footer{
-    display:flex;
-    justify-content: center;   
-    padding-top: 80px; 
-}
-.redes{
-    padding: 30px;
-    list-style: none;
-    justify-content:left;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
-    color_:rgb(36, 36, 96);
-}
-.redes img{
-    width: 80px;
-    padding: 30px;
+    background-color: rgb(253, 177, 177);
 }
 
 
