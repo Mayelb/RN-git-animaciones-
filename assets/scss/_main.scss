@@ -1,0 +1,39 @@
+main{
+    padding-top: 40px;
+} 
+ h2{
+    padding: 30px;
+    text-align: center;
+    font-weight: 700;
+    font-family: $font;
+    font-size: 60px;
+    color: $colorfont;    
+}
+ .item-card{
+       width: 400px;
+       .item-card_1{
+        font-family: $font;
+        font-size: 20px;
+        color: $colorfont;
+    }
+        .item-card p{
+        text-align: center;
+        font-family: $font;
+        font-size: 18px;
+        color: $colorfont;
+    }
+       .item-card_boton{
+        width: 150px;
+        height: 30px;
+        font-size: 15px;
+        color: $colorfont;
+        background-color: $secondcolor;
+    }
+}   
+.form{
+    width: 600px;
+    margin: auto;
+    font-family: $font;
+    font-size: 20px;
+    color: $colorfont;
+    }
