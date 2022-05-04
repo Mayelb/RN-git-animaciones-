@@ -23,10 +23,14 @@ body {
   padding: 20px;
 }
 
+@media (max-width: 768px) {
+  #logo {
+    width: 120px;
+    padding: 20px;
+  }
+}
+
 .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -41,14 +45,43 @@ body {
   padding: 10px;
 }
 
+@media (max-width: 768px) {
+  .nav-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+}
+
 .nav-items li {
+  position: relative;
+  width: 250px;
   font-size: 30px;
   padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .nav-items li {
+    font-size: 25px;
+    padding: 5px;
+  }
 }
 
 .nav-items a {
   color: #24245d;
   text-decoration: none;
+}
+
+.nav-subitems li {
+  background-color: #fdb1b1;
+  position: absolute;
+  padding: 14px;
+  list-style: none;
+  top: 100%;
+  left: 0%;
 }
 
 .nav-items a:hover {
@@ -74,11 +107,32 @@ h2 {
   color: #24245d;
 }
 
+@media (max-width: 768px) {
+  h2 {
+    padding: 20px;
+    font-weight: 500;
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-inner {
+    width: 400px;
+    margin: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    width: 400px;
+  }
+}
+
 .item-card {
   width: 400px;
 }
 
-.item-card .item-card_1 {
+.item-card .card-body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 20px;
   color: #24245d;
@@ -91,8 +145,8 @@ h2 {
   color: #24245d;
 }
 
-.item-card .item-card_boton {
-  width: 150px;
+.item-card .item-card button {
+  width: 200px;
   height: 30px;
   font-size: 15px;
   color: #24245d;
@@ -105,6 +159,12 @@ h2 {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 20px;
   color: #24245d;
+}
+
+@media (max-width: 768px) {
+  .form {
+    width: 300px;
+  }
 }
 
 footer {

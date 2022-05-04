@@ -9,9 +9,28 @@ main{
     font-size: 60px;
     color: $colorfont;    
 }
+@media (max-width:768px){
+    h2{
+        padding: 20px;
+        font-weight: 500;
+        font-size: 50px;
+    }
+}
+@media (max-width:768px){
+    .carousel-inner{
+        width: 400px;
+        margin: 30px;
+    } 
+ }
+ @media (max-width:768px){
+     .carousel-item img{
+         width: 400px;
+     }
+ }
  .item-card{
        width: 400px;
-       .item-card_1{
+      
+       .card-body{
         font-family: $font;
         font-size: 20px;
         color: $colorfont;
@@ -22,8 +41,8 @@ main{
         font-size: 18px;
         color: $colorfont;
     }
-       .item-card_boton{
-        width: 150px;
+       .item-card button{
+        width: 200px;
         height: 30px;
         font-size: 15px;
         color: $colorfont;
@@ -37,3 +56,8 @@ main{
     font-size: 20px;
     color: $colorfont;
     }
+    @media (max-width:768px){
+        .form{
+            width: 300px;
+        }
+    }    

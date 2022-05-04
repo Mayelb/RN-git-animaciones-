@@ -18,8 +18,13 @@
         width: 150px;
         padding: 20px;
    }
+   @media (max-width:768px){
+       #logo{
+           width: 120px;
+           padding: 20px;
+       }
+   }  
 .nav{
-    display: flex;
     justify-content: space-between;
     }
 .nav-items{
@@ -28,13 +33,36 @@
         margin: 40px;
         padding: 10px;
  }
+ @media (max-width:768px) {
+      .nav-items{
+          flex-direction: column;
+          padding: 0;
+          margin: 0;
+      } 
+ }
 .nav-items li{
+    position: relative;
+     width: 250px;
      font-size: 30px;
      padding: 20px;
 }
+@media (max-width:768px){
+    .nav-items li{
+        font-size: 25px;
+        padding: 5px;
+    }
+} 
 .nav-items a{
     color: $colorfont; 
     text-decoration: none;
+}
+.nav-subitems li{
+    background-color: $secondcolor;
+    position:absolute ;
+    padding: 14px;
+    list-style: none;
+    top: 100%;
+    left: 0%;
 }
 .nav-items a:hover{
     background-color:$thirdcolor ;
