@@ -72,13 +72,13 @@ body {
 
 .nav-items a {
   color: #24245d;
+  padding: 10px;
   text-decoration: none;
 }
 
 .nav-subitems li {
   background-color: #fdb1b1;
   position: absolute;
-  padding: 14px;
   list-style: none;
   top: 100%;
   left: 0%;
@@ -86,7 +86,6 @@ body {
 
 .nav-items a:hover {
   background-color: #fdcfcf;
-  padding: 10px;
   border-radius: 8px;
 }
 

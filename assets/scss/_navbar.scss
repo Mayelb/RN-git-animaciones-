@@ -54,19 +54,18 @@
 } 
 .nav-items a{
     color: $colorfont; 
+    padding: 10px;
     text-decoration: none;
 }
 .nav-subitems li{
     background-color: $secondcolor;
-    position:absolute ;
-    padding: 14px;
+    position:absolute;
     list-style: none;
     top: 100%;
     left: 0%;
 }
 .nav-items a:hover{
     background-color:$thirdcolor ;
-    padding: 10px;
     border-radius: 8px;
 
 }
