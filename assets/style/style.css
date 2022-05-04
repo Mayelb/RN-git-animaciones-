@@ -1,31 +1,19 @@
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: #dcf9f9;
-}
-
 .encabezado {
   background-color: #fdb1b1;
-  height: 150px;
+  height: 100%;
   width: 100%;
   top: 0;
   left: 0;
 }
 
 #logo {
-  width: 150px;
+  width: 100px;
   padding: 20px;
 }
 
 @media (max-width: 768px) {
   #logo {
-    width: 120px;
+    width: 90px;
     padding: 20px;
   }
 }
@@ -41,8 +29,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  margin: 40px;
-  padding: 10px;
 }
 
 @media (max-width: 768px) {
@@ -58,26 +44,26 @@ body {
 
 .nav-items li {
   position: relative;
-  width: 250px;
+  width: 150px;
+  padding: auto;
   font-size: 30px;
-  padding: 20px;
 }
 
 @media (max-width: 768px) {
   .nav-items li {
-    font-size: 25px;
+    font-size: 20px;
     padding: 5px;
   }
 }
 
 .nav-items a {
   color: #24245d;
-  padding: 10px;
   text-decoration: none;
 }
 
 .nav-subitems li {
   background-color: #fdb1b1;
+  display: none;
   position: absolute;
   list-style: none;
   top: 100%;
@@ -90,7 +76,7 @@ body {
 }
 
 #lista {
-  padding: 50px;
+  padding: 20px;
 }
 
 main {
@@ -168,5 +154,17 @@ h2 {
 
 footer {
   background-color: #fdb1b1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  background-color: #dcf9f9;
 }
 /*# sourceMappingURL=style.css.map */

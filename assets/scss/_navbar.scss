@@ -1,74 +1,61 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
- body{
-     font-family: $font;
-     background-color: $firstcolor;
-}
 .encabezado{
      background-color: $secondcolor;
-     height: 150px;
+     height: 100%;
      width: 100%;
      top: 0;
      left: 0;
- }
-#logo{
-        width: 150px;
+    #logo{
+        width: 100px;
         padding: 20px;
    }
    @media (max-width:768px){
        #logo{
-           width: 120px;
+           width: 90px;
            padding: 20px;
        }
    }  
-.nav{
+    .nav{
     justify-content: space-between;
     }
-.nav-items{
+    .nav-items{
         display: flex;
         list-style: none;
-        margin: 40px;
-        padding: 10px;
- }
- @media (max-width:768px) {
+    }
+    @media (max-width:768px) {
       .nav-items{
           flex-direction: column;
           padding: 0;
           margin: 0;
       } 
- }
-.nav-items li{
-    position: relative;
-     width: 250px;
-     font-size: 30px;
-     padding: 20px;
-}
-@media (max-width:768px){
-    .nav-items li{
-        font-size: 25px;
-        padding: 5px;
     }
-} 
-.nav-items a{
+    .nav-items li{
+     position: relative;
+     width: 150px;
+     font-size: 30px;    
+    }
+    @media (max-width:768px){
+        .nav-items li{
+        font-size: 20px;
+        padding: 5px;
+      }
+    } 
+    .nav-items a{
     color: $colorfont; 
-    padding: 10px;
     text-decoration: none;
-}
-.nav-subitems li{
+    }
+    .nav-subitems li{
     background-color: $secondcolor;
-    position:absolute;
+    display: none;
+    position: absolute;
     list-style: none;
     top: 100%;
-    left: 0%;
-}
-.nav-items a:hover{
+    left: 0%;   
+    }
+    .nav-items a:hover{
     background-color:$thirdcolor ;
     border-radius: 8px;
-
-}
-#lista{
-    padding:50px;
+    }
+    #lista{
+    padding: 20px;
+    }
 }
