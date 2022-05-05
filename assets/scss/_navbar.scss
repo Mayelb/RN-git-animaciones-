@@ -6,12 +6,11 @@
      left: 0;
     #logo{
         width: 100px;
-        padding: 20px;
    }
    @media (max-width:768px){
        #logo{
            width: 90px;
-           padding: 20px;
+           padding: 10px;
        }
    }  
     .nav{
@@ -31,12 +30,13 @@
     .nav-items li{
      position: relative;
      width: 150px;
+     padding: 20px;
      font-size: 30px;    
     }
     @media (max-width:768px){
         .nav-items li{
         font-size: 20px;
-        padding: 5px;
+        padding: 0px;
       }
     } 
     .nav-items a{
@@ -45,8 +45,8 @@
     }
     .nav-subitems li{
     background-color: $secondcolor;
-    display: none;
     position: absolute;
+    display: none;
     list-style: none;
     top: 100%;
     left: 0%;   
@@ -55,7 +55,8 @@
     background-color:$thirdcolor ;
     border-radius: 8px;
     }
-    #lista{
+    #shop{
+    width: 100px;
     padding: 20px;
     }
 }
