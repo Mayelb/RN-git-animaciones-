@@ -23,7 +23,7 @@
           justify-content: space-between;
 }
 
-.encabezado .nav-items {
+.encabezado .nav-items, .encabezado .shop {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,7 +31,7 @@
 }
 
 @media (max-width: 768px) {
-  .encabezado .nav-items {
+  .encabezado .nav-items, .encabezado .shop {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -41,7 +41,7 @@
   }
 }
 
-.encabezado .nav-items li {
+.encabezado .nav-items li, .encabezado .shop li {
   position: relative;
   width: 150px;
   padding: 20px;
@@ -49,13 +49,13 @@
 }
 
 @media (max-width: 768px) {
-  .encabezado .nav-items li {
+  .encabezado .nav-items li, .encabezado .shop li {
     font-size: 20px;
     padding: 0px;
   }
 }
 
-.encabezado .nav-items a {
+.encabezado .nav-items a, .encabezado .shop a {
   color: #24245d;
   text-decoration: none;
 }
@@ -69,12 +69,12 @@
   left: 0%;
 }
 
-.encabezado .nav-items a:hover {
+.encabezado .nav-items a:hover, .encabezado .shop a:hover {
   background-color: #fdcfcf;
   border-radius: 8px;
 }
 
-.encabezado #shop {
+.encabezado #lista {
   width: 100px;
   padding: 20px;
 }
@@ -128,14 +128,6 @@ h2 {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 18px;
   color: #24245d;
-}
-
-.item-card .item-card button {
-  width: 200px;
-  height: 30px;
-  font-size: 15px;
-  color: #24245d;
-  background-color: #fdb1b1;
 }
 
 .form {

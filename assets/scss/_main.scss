@@ -41,14 +41,7 @@ main{
         font-size: 18px;
         color: $colorfont;
     }
-       .item-card button{
-        width: 200px;
-        height: 30px;
-        font-size: 15px;
-        color: $colorfont;
-        background-color: $secondcolor;
-    }
-}   
+}
 .form{
     width: 600px;
     margin: auto;
@@ -60,4 +53,7 @@ main{
         .form{
             width: 300px;
         }
-    }    
+    } 
+.shop {
+@extend .nav-items;
+}
