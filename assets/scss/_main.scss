@@ -2,11 +2,11 @@ main{
     padding-top: 40px;
 } 
  h2{
-    padding: 30px;
-    text-align: center;
-    font-weight: 700;
+    padding: map-get($h2 , padding )
+    text-align: map-get($h2 , text-align )
+    font-weight:map-get($h2 , font-weight )
     font-family: $font;
-    font-size: 60px;
+    font-size:map-get($h2 , font-size )
     color: $colorfont;    
 }
 @media (max-width:768px){
@@ -41,19 +41,49 @@ main{
         font-size: 18px;
         color: $colorfont;
     }
+    .btn{
+        width: 200px;
+        background-color: $secondcolor;
+        font-size: 20px;
+        color: $colorfont;
+        font-family: $font;
+    }
 }
 .form{
-    width: 600px;
-    margin: auto;
-    font-family: $font;
-    font-size: 20px;
-    color: $colorfont;
-    }
+    width: map-get($form, width );
+    margin: map-get($form, margin );
+    font-size: map-get($form, font-size );
+    color: $colorfont; 
+    font-family:$font;
+ }
     @media (max-width:768px){
         .form{
             width: 300px;
         }
-    } 
-.shop {
-@extend .nav-items;
+    }
+.btnform{
+    @extend .btn;
+
+} 
+.parrafo{
+    text-align: center;
+    font-family: $font;
+    color: $colorfont;
+    font-size: 30px;
+}
+.shop{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.shop li{
+list-style: none;
+padding: 0px 100px;
+font-size: 20px;
+color:$colorfont;
+}
+.line p{
+    width: 800px;
+    height: 1px;
+    padding: 20px;
 }
