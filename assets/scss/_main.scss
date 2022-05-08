@@ -2,11 +2,11 @@ main{
     padding-top: 40px;
 } 
  h2{
-    padding: map-get($h2 , padding )
-    text-align: map-get($h2 , text-align )
-    font-weight:map-get($h2 , font-weight )
+    padding: map-get($h2 , padding );
+    text-align: map-get($h2 , text-alin );
+    font-weight:map-get($h2 , font-weight );
     font-family: $font;
-    font-size:map-get($h2 , font-size )
+    font-size:map-get($h2 , font-size );
     color: $colorfont;    
 }
 @media (max-width:768px){
@@ -51,7 +51,7 @@ main{
 }
 .form{
     width: map-get($form, width );
-    margin: map-get($form, margin );
+    margin: map-get($form, margin);
     font-size: map-get($form, font-size );
     color: $colorfont; 
     font-family:$font;
@@ -61,9 +61,8 @@ main{
             width: 300px;
         }
     }
-.btnform{
+.btn-form{
     @extend .btn;
-
 } 
 .parrafo{
     text-align: center;
@@ -81,9 +80,4 @@ list-style: none;
 padding: 0px 100px;
 font-size: 20px;
 color:$colorfont;
-}
-.line p{
-    width: 800px;
-    height: 1px;
-    padding: 20px;
 }

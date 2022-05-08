@@ -48,26 +48,50 @@
        </nav> 
 </header>
 <main>
-    <div class="container">
+    <div class="container-fluid">
        <h2>Solicitud de Cotización</h2>
         <div class="parrafo">
            <p> Acá podrá ver los productos agregados a su lista</p>
         </div>
-        <div>
-            <ul class="shop">
-                <li>
-                   <p>PRODUCTO SOLICITADO</p> 
-                </li>
-                <li>
-                   <p>CANTIDAD</p> 
-                </li>
-                <li>
-                   <p>PESO</p> 
-                </li>
-            </ul>
-        </div>
-        <div class="line">
-           <p>_________________________________________________________________________________________</p> </div>
+        <div class="table-responsive">
+        <table class="table align-middle">
+           <thead>
+              <tr>
+                 <th> PRODUCTO SOLICITADO</th>
+                 <th> CANTIDAD</th>
+                 <th> PESO</th>
+              </tr>
+              <tbody>
+               <tr>
+                 <th></th>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+               </tr>
+           </thead> 
+         </tbody>      
+        </table>
+      </div>
+      <div class="form">
+         <div class="mb-4">
+           <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+           <input type="email" class="form-control" id="exampleFormControlInput1">
+         </div>
+         <div class="mb-4">
+           <label for="exampleFormControlInput1" class="form-label">Email</label>
+           <input type="email" class="form-control" id="exampleFormControlInput1">
+         </div>
+         <div class="mb-4">
+           <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+           <input type="email" class="form-control" id="exampleFormControlInput1">
+         </div>
+         <div class="mb-4">
+           <textarea class="form-control" placeholder= "Escribe un mensaje"></textarea>
+         </div> 
+         <div>
+           <button type="submit" class="btn-form">Enviar</button>
+         </div>
+       </div>
     </div>
 </main>
 <footer class="text-center text-white">
