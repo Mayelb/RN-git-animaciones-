@@ -2,15 +2,12 @@
      background-color: $secondcolor;
      height: 100%;
      width: 100%;
-     top: 0;
-     left: 0;
     #logo{
         width: 100px;
    }
    @media (max-width:768px){
        #logo{
            width: 90px;
-           padding: 10px;
        }
    }  
     .nav{
@@ -30,7 +27,7 @@
     .nav-items li{
      position: relative;
      width: 150px;
-     padding: 20px;
+     padding: 20px 0px;
      font-size: 30px;    
     }
     @media (max-width:768px){
@@ -42,21 +39,14 @@
     .nav-items a{
     color: $colorfont; 
     text-decoration: none;
-    }
-    .nav-subitems li{
-    background-color: $secondcolor;
-    position: absolute;
-    display: none;
-    list-style: none;
-    top: 100%;
-    left: 0%;   
+    padding: 10px;
     }
     .nav-items a:hover{
     background-color:$thirdcolor ;
     border-radius: 8px;
     }
     #lista{
-    width: 100px;
+    width: 90px;
     padding: 20px;
     }
 }

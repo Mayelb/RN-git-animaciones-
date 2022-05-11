@@ -2,8 +2,6 @@
   background-color: #fdb1b1;
   height: 100%;
   width: 100%;
-  top: 0;
-  left: 0;
 }
 
 .encabezado #logo {
@@ -13,7 +11,6 @@
 @media (max-width: 768px) {
   .encabezado #logo {
     width: 90px;
-    padding: 10px;
   }
 }
 
@@ -44,7 +41,7 @@
 .encabezado .nav-items li {
   position: relative;
   width: 150px;
-  padding: 20px;
+  padding: 20px 0px;
   font-size: 30px;
 }
 
@@ -58,15 +55,7 @@
 .encabezado .nav-items a {
   color: #24245d;
   text-decoration: none;
-}
-
-.encabezado .nav-subitems li {
-  background-color: #fdb1b1;
-  position: absolute;
-  display: none;
-  list-style: none;
-  top: 100%;
-  left: 0%;
+  padding: 10px;
 }
 
 .encabezado .nav-items a:hover {
@@ -75,7 +64,7 @@
 }
 
 .encabezado #lista {
-  width: 100px;
+  width: 90px;
   padding: 20px;
 }
 
@@ -83,12 +72,12 @@ main {
   padding-top: 40px;
 }
 
-h2 {
+h1 {
   padding: 30px;
   text-align: center;
   font-weight: 700;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-size: 60px;
+  font-size: 50px;
   color: #24245d;
 }
 
@@ -118,19 +107,19 @@ h2 {
 }
 
 .item-card .card-body {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   color: #24245d;
 }
 
 .item-card .item-card p {
   text-align: center;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 18px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   color: #24245d;
 }
 
-.item-card .btn, .item-card .btnform {
+.btn, .btn-form {
   width: 200px;
   background-color: #fdb1b1;
   font-size: 20px;
@@ -152,6 +141,48 @@ h2 {
   }
 }
 
+.btn-form {
+  border-radius: 5px;
+  border-color: #fdb1b1;
+}
+
+.card-links {
+  width: 700px;
+  height: 350px;
+}
+
+@media (max-width: 768px) {
+  .card-links {
+    width: 500px;
+    height: 250px;
+  }
+}
+
+.card-links img {
+  width: 600px;
+  height: 250px;
+}
+
+@media (max-width: 768px) {
+  .card-links img {
+    width: 350px;
+    height: 150px;
+  }
+}
+
+.card-links a {
+  padding: 10px;
+  font-size: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #24245d;
+  text-decoration: none;
+}
+
+.card-links a:hover {
+  background-color: #fdcfcf;
+  border-radius: 8px;
+}
+
 .parrafo {
   text-align: center;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
@@ -159,27 +190,39 @@ h2 {
   font-size: 30px;
 }
 
-.shop {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media (max-width: 768px) {
+  .parrafo {
+    font-size: 20px;
+  }
+}
+
+.table-item {
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #24245d;
+  padding: 30px;
+}
+
+@media (max-width: 768px) {
+  .table-item {
+    font-size: 15px;
+  }
+}
+
+tbody {
+  padding: 20px;
+  border-color: black;
+}
+
+tr {
+  padding: 30px;
+  color: #ff8383;
+}
+
+.sale {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 30px;
-}
-
-.shop li {
-  list-style: none;
-  padding: 0px 100px;
-  font-size: 20px;
-  color: #24245d;
-}
-
-.line p {
-  width: 800px;
-  height: 1px;
-  padding: 20px;
 }
 
 footer {

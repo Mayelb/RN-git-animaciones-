@@ -1,12 +1,12 @@
 main{
     padding-top: 40px;
 } 
- h2{
-    padding: map-get($h2 , padding );
-    text-align: map-get($h2 , text-alin );
-    font-weight:map-get($h2 , font-weight );
+ h1{
+    padding: map-get($h1 , padding );
+    text-align: map-get($h1 , text-align );
+    font-weight:map-get($h1 , font-weight );
     font-family: $font;
-    font-size:map-get($h2 , font-size );
+    font-size:map-get($h1 , font-size );
     color: $colorfont;    
 }
 @media (max-width:768px){
@@ -31,23 +31,19 @@ main{
        width: 400px;
       
        .card-body{
-        font-family: $font;
-        font-size: 20px;
-        color: $colorfont;
+        @include font-propierties(20px,$font,$colorfont);
     }
         .item-card p{
         text-align: center;
-        font-family: $font;
-        font-size: 18px;
-        color: $colorfont;
+        @include font-propierties(18px,$font,$colorfont);
     }
-    .btn{
-        width: 200px;
-        background-color: $secondcolor;
-        font-size: 20px;
-        color: $colorfont;
-        font-family: $font;
-    }
+}
+.btn{
+    width: 200px;
+    background-color: $secondcolor;
+    font-size: 20px;
+    color: $colorfont;
+    font-family: $font;
 }
 .form{
     width: map-get($form, width );
@@ -63,21 +59,72 @@ main{
     }
 .btn-form{
     @extend .btn;
+    border-radius: 5px;
+    border-color: $secondcolor;
+    
 } 
+.card-links{
+    width: 700px;
+    height: 350px;
+}
+@media (max-width:768px){
+    .card-links{
+        width: 500px;
+        height: 250px;
+    }
+
+}
+.card-links img{
+    width: 600px;
+    height: 250px;
+}
+@media (max-width:768px){
+    .card-links img{
+        width: 350px;
+        height: 150px;
+
+    }
+}
+.card-links a{
+    padding: 10px;
+    @include font-propierties(40px,$font,$colorfont);
+    text-decoration: none;
+}
+.card-links a:hover{
+    background-color:$thirdcolor ;
+    border-radius: 8px;
+}
 .parrafo{
     text-align: center;
     font-family: $font;
     color: $colorfont;
     font-size: 30px;
 }
-.shop{
-    display: flex;
-    justify-content: center;
-    padding-top: 30px;
+@media (max-width:768px){
+    .parrafo{
+        font-size: 20px;
+    }
 }
-.shop li{
-list-style: none;
-padding: 0px 100px;
-font-size: 20px;
-color:$colorfont;
+.table-item{
+    font-size:20px;
+    font-family: $font;
+    color:$colorfont;
+    padding:30px;
+}
+@media (max-width:768px){
+    .table-item{
+        font-size:15px;
+    }
+}
+tbody{
+ padding: 20px;
+ border-color:black   
+}
+tr{
+    padding:
+    30px;
+    color:$colorfontshop;
+}
+.sale{
+    justify-content: center;
 }

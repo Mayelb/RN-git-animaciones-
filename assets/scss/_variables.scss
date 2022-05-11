@@ -2,17 +2,23 @@ $firstcolor:rgb(220, 249, 249);
 $secondcolor:rgb(253, 177, 177);
 $thirdcolor:#fdcfcf;
 $colorfont:rgb(36, 36, 93);
+$colorfontshop:rgb(255, 131, 131);
 $font:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
-$h2:(
+$h1:(
     padding: 30px,
     text-align: center,
     font-weight: 700,
-    font-size: 60px
-     )
+    font-size: 50px,
+     );
 
-$form (
+$form: (
     width: 600px,
     margin: auto,
-    font-size: 20px
-    )
+    font-size: 20px,
+    );
+@mixin font-propierties($f-size,$ff,$color-f){
+    font-size: $f-size;
+    font-family: $ff;
+    color:$color-f;  
+}
