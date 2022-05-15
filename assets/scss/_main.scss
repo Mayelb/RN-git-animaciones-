@@ -18,7 +18,7 @@ main{
 }
 @media (max-width:768px){
     .carousel-inner{
-        width: 400px;
+        width: 300px;
         margin: 30px;
     } 
  }
@@ -28,7 +28,8 @@ main{
      }
  }
  .item-card{
-       width: 400px;
+       width: 
+       300px;
       
        .card-body{
         @include font-propierties(20px,$font,$colorfont);

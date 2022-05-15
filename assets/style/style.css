@@ -91,7 +91,7 @@ h1 {
 
 @media (max-width: 768px) {
   .carousel-inner {
-    width: 400px;
+    width: 300px;
     margin: 30px;
   }
 }
@@ -103,7 +103,7 @@ h1 {
 }
 
 .item-card {
-  width: 400px;
+  width: 300px;
 }
 
 .item-card .card-body {
@@ -227,6 +227,30 @@ tr {
 
 footer {
   background-color: #fdb1b1;
+}
+
+.footer-items {
+  background-color: #fdb1b1;
+}
+
+#logo-f {
+  width: 150px;
+}
+
+h6 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #24245d;
+}
+
+.footer-items p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #24245d;
+}
+
+.footer-items a {
+  text-decoration: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #24245d;
 }
 
 * {

@@ -1,4 +1,23 @@
 footer{
+    background-color:$secondcolor;   
+}
+.footer-items{
     background-color:$secondcolor;
     
+}
+#logo-f{
+    width: 150px;
+}
+h6{
+    font-family: $font;
+    color: $colorfont;
+}
+.footer-items p{
+    font-family: $font;
+    color: $colorfont;
+}
+.footer-items a{
+    text-decoration: none;
+    font-family: $font;
+    color: $colorfont;
 }
