@@ -153,7 +153,7 @@ h1 {
 
 @media (max-width: 768px) {
   .card-links {
-    width: 500px;
+    width: 400px;
     height: 250px;
   }
 }
@@ -165,7 +165,7 @@ h1 {
 
 @media (max-width: 768px) {
   .card-links img {
-    width: 350px;
+    width: 300px;
     height: 150px;
   }
 }
@@ -223,6 +223,12 @@ tr {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .sale img {
+    width: 150px;
+  }
 }
 
 footer {
