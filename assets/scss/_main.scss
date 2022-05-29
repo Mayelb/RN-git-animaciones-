@@ -9,6 +9,14 @@ main{
     font-size:map-get($h1 , font-size );
     color: $colorfont;    
 }
+h2{
+    padding: map-get($h1 , padding );
+    text-align: map-get($h1 , text-align );
+    font-weight:map-get($h1 , font-weight );
+    font-family: $font;
+    font-size:map-get($h1 , font-size );
+    color: $colorfont;    
+}
 @media (max-width:768px){
     h2{
         padding: 20px;

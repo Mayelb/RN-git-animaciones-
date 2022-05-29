@@ -81,6 +81,15 @@ h1 {
   color: #24245d;
 }
 
+h2 {
+  padding: 30px;
+  text-align: center;
+  font-weight: 700;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 50px;
+  color: #24245d;
+}
+
 @media (max-width: 768px) {
   h2 {
     padding: 20px;
