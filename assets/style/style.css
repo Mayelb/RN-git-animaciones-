@@ -14,21 +14,19 @@
   }
 }
 
-.encabezado .nav {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.encabezado .nav-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
+.encabezado .nav-link {
+  font-size: 25px;
 }
 
 @media (max-width: 768px) {
-  .encabezado .nav-items {
+  .encabezado .nav-link {
+    font-size: 20px;
+    padding: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .encabezado .nav-link {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -38,29 +36,22 @@
   }
 }
 
-.encabezado .nav-items li {
-  position: relative;
-  width: 150px;
-  padding: 20px 0px;
-  font-size: 30px;
-}
-
-@media (max-width: 768px) {
-  .encabezado .nav-items li {
-    font-size: 20px;
-    padding: 0px;
-  }
-}
-
-.encabezado .nav-items a {
+.encabezado .nav-link {
   color: #24245d;
-  text-decoration: none;
-  padding: 10px;
 }
 
-.encabezado .nav-items a:hover {
+.encabezado .nav-link:hover {
   background-color: #fdcfcf;
-  border-radius: 8px;
+  border-radius: 6px;
+}
+
+.encabezado .dropdown-menu {
+  background-color: #fdb1b1;
+}
+
+.encabezado .dropdown-item {
+  font-size: 25px;
+  color: #24245d;
 }
 
 .encabezado #lista {
@@ -93,16 +84,17 @@ h2 {
 @media (max-width: 768px) {
   h2 {
     padding: 20px;
-    font-weight: 500;
-    font-size: 50px;
+    font-weight: 400;
+    font-size: 40px;
   }
 }
 
-@media (max-width: 768px) {
-  .carousel-inner {
-    width: 300px;
-    margin: 30px;
-  }
+.carousel-inner {
+  max-height: 500px;
+}
+
+.carousel-item img {
+  width: 600px;
 }
 
 @media (max-width: 768px) {
@@ -112,16 +104,22 @@ h2 {
 }
 
 .item-card {
-  width: 300px;
+  width: 400px;
 }
 
-.item-card .card-body {
+@media (max-width: 768px) {
+  .item-card {
+    width: 300px;
+  }
+}
+
+.card-body {
   font-size: 20px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   color: #24245d;
 }
 
-.item-card .item-card p {
+.item-card p {
   text-align: center;
   font-size: 18px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
@@ -155,43 +153,6 @@ h2 {
   border-color: #fdb1b1;
 }
 
-.card-links {
-  width: 700px;
-  height: 350px;
-}
-
-@media (max-width: 768px) {
-  .card-links {
-    width: 400px;
-    height: 250px;
-  }
-}
-
-.card-links img {
-  width: 600px;
-  height: 250px;
-}
-
-@media (max-width: 768px) {
-  .card-links img {
-    width: 300px;
-    height: 150px;
-  }
-}
-
-.card-links a {
-  padding: 10px;
-  font-size: 40px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  color: #24245d;
-  text-decoration: none;
-}
-
-.card-links a:hover {
-  background-color: #fdcfcf;
-  border-radius: 8px;
-}
-
 .parrafo {
   text-align: center;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
@@ -203,6 +164,37 @@ h2 {
   .parrafo {
     font-size: 20px;
   }
+}
+
+.card {
+  width: 350px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 200px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.icon {
+  width: 60px;
+}
+
+.card-title {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #24245d;
+  font-size: 20px;
+}
+
+.card-text {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #24245d;
+  font-size: 15px;
 }
 
 .table-item {

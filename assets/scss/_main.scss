@@ -8,27 +8,28 @@ main{
     font-family: $font;
     font-size:map-get($h1 , font-size );
     color: $colorfont;    
-}
+} 
 h2{
     padding: map-get($h1 , padding );
     text-align: map-get($h1 , text-align );
     font-weight:map-get($h1 , font-weight );
     font-family: $font;
     font-size:map-get($h1 , font-size );
-    color: $colorfont;    
-}
+    color: $colorfont;     
+}   
 @media (max-width:768px){
     h2{
         padding: 20px;
-        font-weight: 500;
-        font-size: 50px;
+        font-weight: 400;
+        font-size: 40px;
     }
 }
-@media (max-width:768px){
-    .carousel-inner{
-        width: 300px;
-        margin: 30px;
-    } 
+.carousel-inner{
+    max-height: 500px;
+
+}
+ .carousel-item img{
+    width: 600px;
  }
  @media (max-width:768px){
      .carousel-item img{
@@ -37,15 +38,19 @@ h2{
  }
  .item-card{
        width: 
-       300px;
-      
-       .card-body{
+       400px;
+ } 
+ @media (max-width:768px){
+           .item-card{
+               width: 300px;
+           }
+}     
+.card-body{
         @include font-propierties(20px,$font,$colorfont);
-    }
-        .item-card p{
+}
+.item-card p{
         text-align: center;
         @include font-propierties(18px,$font,$colorfont);
-    }
 }
 .btn{
     width: 200px;
@@ -69,40 +74,8 @@ h2{
 .btn-form{
     @extend .btn;
     border-radius: 5px;
-    border-color: $secondcolor;
-    
+    border-color: $secondcolor;   
 } 
-.card-links{
-    width: 700px;
-    height: 350px;
-}
-@media (max-width:768px){
-    .card-links{
-        width: 400px;
-        height: 250px;
-    }
-
-}
-.card-links img{
-    width: 600px;
-    height: 250px;
-}
-@media (max-width:768px){
-    .card-links img{
-        width: 300px;
-        height: 150px;
-
-    }
-}
-.card-links a{
-    padding: 10px;
-    @include font-propierties(40px,$font,$colorfont);
-    text-decoration: none;
-}
-.card-links a:hover{
-    background-color:$thirdcolor ;
-    border-radius: 8px;
-}
 .parrafo{
     text-align: center;
     font-family: $font;
@@ -113,6 +86,31 @@ h2{
     .parrafo{
         font-size: 20px;
     }
+}
+.card{
+    width: 350px;
+}
+@media (max-width:768px){
+    .card{
+        width: 200px;
+        margin-left: 50px;
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+}
+
+.icon{
+width: 60px;
+}
+.card-title{
+    font-family: $font;
+    color: $colorfont;
+    font-size: 20px;
+}
+.card-text{
+    font-family: $font;
+    color: $colorfont;
+    font-size: 15px;
 }
 .table-item{
     font-size:20px;
